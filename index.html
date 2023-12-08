@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <title>Home | Natalie Harris</title>
+</head>
+<body>
+  <nav class="space-x-4 border-b-[1px] border-black">
+    <a href="index.html" class="my-[1.5%] float-left" id="nav-elem" tabindex="1">Natalie Harris</a>
+    <a href="resume.html" class="my-[1.5%] float-right" id="nav-elem" tabindex="4">Resume</a>
+    <a href="projects.html" class="my-[1.5%] float-right" id="nav-elem" tabindex="3">Projects</a>
+    <a href="skills.html" class="my-[1.5%] ml-[2%] float-right" id="nav-elem" tabindex="2">Skills</a>
+  </nav>
+  <header class="p-[12.5%]">
+    <h1 class="text-6xl">Hi, I'm Natalie!</h1>
+  </header>
+  <main class="p-[10%] border-t-[1px] border-black">
+    <h1 class="mb-[3%] text-3xl">About Me</h1>
+    <p>I'm a current student at Kansas State University persuing a degree in Integrated Computer Science with a concentration in Management. My passion for technology and its ever-evolving trends drives me to consistently broaden my knowledge by learning new computer science topics and skills. Ultimately, I wish to contribute to innovative solutions that shape the future of technology and its seamless integration into our lives.</p>
+  </main>
+  <footer>
+    <h1>Get In Touch</h1>
+    <p>I'm currently looking for web or software development internship opportunities. If you are aware of any openings, have inquiries, or wish to say hello, please don't hesitate to send me an email at <a href="mailto:nnatalieharris@gmail.com" tabindex="5">nnatalieharris@gmail.com</a>.</p>
+  </footer>
+  <div class="text-center mb-2">
+    <button id="heart">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 864 864" style="enable-background:new 0 0 864 864;" xml:space="preserve" class="w-[35px] h-[35px]">
+        <path d="M594.5,126c-63.3-5.2-122.4,21.2-162.5,66.8c-40.1-45.6-99.2-72-162.5-66.8c-88.1,7.3-158.3,75.4-183.4,158
+          C28.4,473.4,244.6,593.2,367.8,688.2c21.5,16.6,43,33.4,64.2,50.5c21.3-17.1,42.7-33.9,64.2-50.5c123.2-95,339.3-214.8,281.7-404.2
+          C752.8,201.4,682.6,133.3,594.5,126z"/>
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    heartBtn = document.getElementById("heart");
+    heartBtn.addEventListener("click", function() {
+      heartBtn.classList.remove("bounce");
+      heartBtn.offsetWidth = heartBtn.offsetWidth;
+      heartBtn.classList.add("bounce");
+    }, false);
+  </script>
+
+</body>
+</html>

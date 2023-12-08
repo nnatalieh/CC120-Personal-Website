@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300, 400, 500, 600, 700;
+    margin: 0;
+}
+
+p, li {
+    color: #444;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0 10%;
+    font-weight: 500;
+    background-color: white;
+    overflow: auto;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    background: 
+        linear-gradient(#FFACD1 0 0) var(--p, 0) 100% /var(--d, 0) 3.5px no-repeat;
+    transition: 0.5s, background-position 0s 0.5s;
+}
+
+nav a:hover {
+    --d: 100%;
+    --p: 100%;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-20px);}
+} 
+
+.bounce {
+    animation-duration: 1s;
+    animation-name: bounce;
+}
+
+header h1 {
+    text-align: center;
+    padding: 2% 0;
+}
+
+footer {
+    padding: 10% 10%;
+    border-top: 1px black solid;
+}
+
+footer a {
+    color: #FFACD1
+}
+
+footer h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-bottom: 3%;
+}

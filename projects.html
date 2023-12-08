@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <title>Projects | Natalie Harris</title>
+</head>
+<body>
+  <nav class="space-x-4 border-b-[1px] border-black">
+    <a href="index.html" class="my-[1.5%] float-left" tabindex="1">Natalie Harris</a>
+    <a href="resume.html" class="my-[1.5%] mb-[2%] float-right" tabindex="4">Resume</a>
+    <a href="projects.html" class="my-[1.5%] mb-[2%] float-right" tabindex="3">Projects</a>
+    <a href="skills.html" class="my-[1.5%] ml-[2%] float-right" tabindex="2">Skills</a>
+  </nav>
+  <header>
+    <h1 class="my-[2%] text-3xl">Projects</h1>
+  </header>
+  <main class="relative flex flex-wrap items-center justify-center gap-[20px] px-[10%] pb-[10%]">
+    <a href="https://nnatalieh.github.io/odin-calculator/" tabindex="5">
+      <div class="relative flex items-center justify-center w-[400px] h-[375px] bg-[#b9b9b94c]">
+        <img class="w-[300px] h-[275px]" src="img/calculator.png" alt="Calculator">
+        <div class="absolute w-[100%] h-[100%] bg-[#44444480] transition duration-300 opacity-0 hover:opacity-80">
+          <p class="absolute bottom-0 ml-4 mb-2 text-[35px] text-white">Calculator</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://nnatalieh.github.io/odin-etch-a-sketch/" tabindex="6">
+      <div class="relative flex items-center justify-center w-[400px] h-[375px] bg-[#b9b9b94c]">
+        <img class="w-[300px] h-[275px]" src="img/etch-a-sketch.png" alt="Etch-a-ketch">
+        <div class="absolute w-[100%] h-[100%] bg-[#44444480] transition duration-300 opacity-0 hover:opacity-80">
+          <p class="absolute bottom-0 ml-4 mb-2 text-[35px] text-white">Etch-a-Sketch</p>
+        </div>
+      </div>
+    </a>
+  </main>
+  <footer>
+    <h1>Get In Touch</h1>
+    <p>I'm currently looking for web or software development internship opportunities. If you are aware of any openings, have inquiries, or wish to say hello, please don't hesitate to send me an email at <a href="mailto:nnatalieharris@gmail.com" tabindex="5">nnatalieharris@gmail.com</a>.</p>
+  </footer>
+  <div class="text-center mb-2">
+    <button id="heart">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 864 864" style="enable-background:new 0 0 864 864;" xml:space="preserve" class="w-[35px] h-[35px]">
+        <path d="M594.5,126c-63.3-5.2-122.4,21.2-162.5,66.8c-40.1-45.6-99.2-72-162.5-66.8c-88.1,7.3-158.3,75.4-183.4,158
+          C28.4,473.4,244.6,593.2,367.8,688.2c21.5,16.6,43,33.4,64.2,50.5c21.3-17.1,42.7-33.9,64.2-50.5c123.2-95,339.3-214.8,281.7-404.2
+          C752.8,201.4,682.6,133.3,594.5,126z"/>
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    heartBtn = document.getElementById("heart");
+    heartBtn.addEventListener("click", function() {
+      heartBtn.classList.remove("bounce");
+      heartBtn.offsetWidth = heartBtn.offsetWidth;
+      heartBtn.classList.add("bounce");
+    }, false);
+  </script>
+  
+</body>
+</html>
